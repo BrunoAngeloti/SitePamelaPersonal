@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    position: fixed;
+    right: 0;
+    top: 0;
+    gap: 4rem;
+    width: 100%;
+    padding: 2rem 3rem 2rem 3rem;
+    justify-content: flex-end;
+    transition: 0.5s;
+    
+    z-index: 10;
+    a {
+        cursor: pointer;
+        color: white !important;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: bold;
+        font-size: 1.3rem;
+
+        &::after{
+            content: '';
+            display: block;
+            border-bottom: solid 3px var(--font-color);  
+            transform: scaleX(0);  
+            transition: transform 250ms ease-in-out;
+        }  
+        &:hover::after{
+            transform: scaleX(1);
+        }  
+    }
+    
+}
+
+@media (max-width: 1400px){
+    .container {
+       a {
+        font-size: 1rem;
+       } 
+    }
+}

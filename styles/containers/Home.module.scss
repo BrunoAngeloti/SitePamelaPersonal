@@ -1,0 +1,135 @@
+.container {
+    background-image: url("/BackgroundHome.png");
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    border-radius: 0px 0px 0px 700px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 8rem;
+    overflow: hidden;
+    background-attachment: fixed;
+    box-shadow: -4px 4px 5px rgba(0, 0, 0, 0.5);
+    padding: 0;
+
+    img {
+        width: 600px;
+        bottom: 0;
+        margin: 0;
+    }
+}
+
+.textArea {
+    color: white;
+    align-self: center;
+    font-family: 'Ubuntu', sans-serif; 
+    line-height: 0.5rem; 
+    p:nth-child(1){
+        font-size: 2rem;
+    }
+    p:nth-child(2){
+        font-size: 3rem;
+    }
+    p:nth-child(3){
+        font-size: 1.2rem;
+        color: var(--subtitle-color);
+    }
+    button {
+        cursor: pointer;
+        background-color:transparent;  
+        padding: 16px;
+        border-radius: 30px;
+        border: 3px solid var(--font-color);
+        color: white;
+        font-weight: bold;
+        font-size: 1.2rem;
+        padding: 15px 25px;
+        margin-top: 2rem;
+        transition: 0.5s;
+
+        &:hover {
+            background-color: var(--font-color);    
+        }
+    }
+}
+
+@media (max-width: 1400px){
+    .container {
+        border-radius: 0px 0px 0px 500px;
+
+        img {
+            width: 400px;
+        }
+    }
+    .textArea {
+        line-height: 0.3rem; 
+        p:nth-child(1){
+            font-size: 1.8rem;
+        }
+        p:nth-child(2){
+            font-size: 2.8rem;
+        }
+        p:nth-child(3){
+            font-size: 1.0rem;
+        }
+        button {
+            font-size: 1.0rem;
+        }
+    }
+}
+
+@media (max-width: 1100px){
+    .container {
+        flex-direction: column-reverse;
+        align-items:center;
+        border-radius: 0px 0px 0px 200px;
+        gap: 3rem;
+        img {
+            width: 300px;
+            display: none;
+        }
+    }
+}
+@media (max-width: 450px){
+    .container {
+        border-radius: 0px 0px 0px 100px;
+    }
+    .textArea {
+        
+        line-height: 0.2rem; 
+        p:nth-child(1){
+            font-size: 1.3rem;
+        }
+        p:nth-child(2){
+            font-size: 2.3rem;
+        }
+        p:nth-child(3){
+            font-size: 1rem;
+        }
+        button {
+            font-size: 1rem;
+        }
+    }
+}
+@media (max-width: 360px){
+    .container {
+        border-radius: 0px 0px 0px 50px;
+    }
+    .textArea {
+        
+        line-height: 0.2rem; 
+        p:nth-child(1){
+            font-size: 1.0rem;
+        }
+        p:nth-child(2){
+            font-size: 1.9rem;
+        }
+        p:nth-child(3){
+            font-size: 0.8rem;
+        }
+        button {
+            font-size: 0.8rem;
+        }
+    }
+}
