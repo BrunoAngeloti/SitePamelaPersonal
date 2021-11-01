@@ -10,23 +10,31 @@
     transition: 0.5s;
     
     z-index: 10;
-    a {
-        cursor: pointer;
-        color: white !important;
-        font-family: "Ubuntu", sans-serif;
-        font-weight: bold;
-        font-size: 1.3rem;
+    .content, .active{
+        display: flex;
+        gap: 4rem;
+        a {
+            cursor: pointer;
+            color: white !important;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: bold;
+            font-size: 1.3rem;
 
-        &::after{
-            content: '';
-            display: block;
-            border-bottom: solid 3px var(--font-color);  
-            transform: scaleX(0);  
-            transition: transform 250ms ease-in-out;
-        }  
-        &:hover::after{
-            transform: scaleX(1);
-        }  
+            &::after{
+                content: '';
+                display: block;
+                border-bottom: solid 3px var(--font-color);  
+                transform: scaleX(0);  
+                transition: transform 250ms ease-in-out;
+            }  
+            &:hover::after{
+                transform: scaleX(1);
+            }  
+        }
+    }
+
+    .hamburguer{
+        display: none;
     }
     
 }
@@ -37,4 +45,30 @@
         font-size: 1rem;
        } 
     }
+}
+
+@media (max-width: 900px){
+    .container{
+        flex-direction: column-reverse;
+        .hamburguer{
+            display: flex;
+            align-self: flex-end;
+            border: none;
+            background-color: transparent;
+        }
+        .content {
+            display: none;
+            flex-direction:column;
+        }
+        .active{
+
+            display: flex;
+            flex-direction:column;
+            gap: 2rem;
+            align-items: center;
+        }      
+    }
+    
+    
+    
 }

@@ -30,7 +30,7 @@ export function Contact(props){
                         </div>
                         <div className={styles.info}>
                             <img src="iconPhone.svg" alt="icone de telefone" />
-                            <p>(27)99999-9999</p>
+                            <p>(27)99726-3279</p>
                         </div>
                         <div className={styles.info}>
                             <img src="iconEmail.svg" alt="icone de email" />
@@ -39,16 +39,13 @@ export function Contact(props){
                         <Bar type="2"/>
                     </div>
                     <div className={styles.socialMedias}>
-                        <a href="">
+                        <a href="https://www.instagram.com/pamelacristinapersonal/" target="_blank">
                             <img src="iconInsta.svg" alt="icon instagram" />
                         </a>
-                        <a href="">
+                        <a href="https://www.facebook.com/pamelacristina.pires" target="_blank">
                             <img src="iconFace.svg" alt="icon facebook" />
                         </a>
-                        <a href="">
-                            <img src="iconTwitter.svg" alt="icon twitter" />
-                        </a>
-                        <a href="">
+                        <a href="https://web.whatsapp.com/send?phone=5527997263279" target="_blank">
                             <img src="iconZap.svg" alt="icon whatsapp" />
                         </a>
                     </div>

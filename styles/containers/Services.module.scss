@@ -43,14 +43,19 @@
     }
 }
 
+@media (max-width: 1050px){
+    .header {
+        flex-direction: column;
+        margin-bottom:30px;
+    }
+}
+
 @media (max-width: 530px){
     .container {
         padding: 0px 10px 50px 10px;
         
     }
     .header {
-        flex-direction: column;
-        margin-bottom:30px;
         h1 {
             font-size: 2rem;
         }
